@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rețete Culinare | mihaicr.ro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>MihaiCR Cheff</h1>
+            </div>
+            <div class="language-selector">
+                <button onclick="changeLanguage('ro')" class="lang-btn active">RO</button>
+                <button onclick="changeLanguage('de')" class="lang-btn">DE</button>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link" data-translate="home">Acasă</a>
+                <a href="#recipes" class="nav-link" data-translate="recipes">Rețete</a>
+                <a href="#categories" class="nav-link" data-translate="categories">Categorii</a>
+                <a href="#about" class="nav-link" data-translate="about">Despre</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title" data-translate="hero-title">Descoperă Bucătăria Autentică</h2>
+                <p class="hero-subtitle" data-translate="hero-subtitle">Explorează rețete tradiționale și moderne</p>
+            </div>
+        </section>
+
+        <section id="recipes" class="recipes-section">
+            <h2 class="section-title" data-translate="featured-recipes">Rețete Populare</h2>
+            <div class="recipes-grid">
+                <!-- Recipe cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="categories" class="categories-section">
+            <h2 class="section-title" data-translate="categories-title">Categorii</h2>
+            <div class="categories-grid">
+                <!-- Categories will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 data-translate="contact">Contact</h3>
+                <p>Email: contact@mihaicr.ro</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-translate="follow-us">Urmărește-ne</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 mihaicr.ro - Toate drepturile rezervate</p>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
